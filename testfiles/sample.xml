@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<S:Envelope xmlns:S="http://www.w3.org/2003/05/soap-envelope"
+	xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/03/addressing"
+	xmlns:ebi="http://www.myvan.descartes.com/ebi/2004/r1">
+	<S:Header>
+		<wsa:From>
+			<wsa:Address>urn:zz:054238022</wsa:Address>
+		</wsa:From>
+		<wsa:To>urn:zz:054238022</wsa:To>
+		<wsa:Action>urn:myvan:810</wsa:Action>
+		<ebi:Sequence>
+			<ebi:MessageNumber>282065</ebi:MessageNumber>
+		</ebi:Sequence>
+		<ebi:TestIndicator>P</ebi:TestIndicator>
+	</S:Header>
+	<S:Body>
+		<shipment xmlns="http://individual.shipment"
+			xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+			xsi:schemaLocation="http://individual.shipment ind_shipment2.xsd">
+			<transaction_control>
+				<transmission_date>2022-05-16</transmission_date>
+				<transmission_time offset_GMT_time="GMT-05:00">14:00:56.940
+				</transmission_time>
+				<client client_environment_code="Midrex">Midrex</client>
+				<action action_code="UPDATE">UPDATE</action>
+				<transmission_origin_location
+					location_code="001">OPERATIONS</transmission_origin_location>
+				<request_fa>false</request_fa>
+			</transaction_control>
+		</shipment>
+	</S:Body>
+</S:Envelope>
